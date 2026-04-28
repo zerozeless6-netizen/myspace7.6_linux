@@ -1,0 +1,21 @@
+#set($subject = "Xác nhận đăng ký tài khoản tại ${config.get('dspace.name')}")
+#set($phone = ${config.get('mail.message.helpdesk.telephone')})
+## E-mail sent to DSpace users when they register for an account
+##
+## Parameters: {0} is expanded to a special registration URL
+##
+## See org.dspace.core.Email for information on the format of this file.
+##
+Chào bạn,
+
+Để hoàn tất việc đăng ký tài khoản tại ${config.get('dspace.name')}, vui lòng nhấn vào đường liên kết dưới đây:
+
+  ${params[0]}
+
+Nếu bạn cần hỗ trợ về tài khoản, vui lòng gửi email đến ${config.get("mail.helpdesk")}
+#if( $phone )
+hoặc gọi cho chúng tôi tại số ${phone}.
+#end
+
+Trân trọng,
+Đội ngũ ${config.get('dspace.name')}

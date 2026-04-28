@@ -1,0 +1,29 @@
+# --- BẢO MẬT: Không đẩy file chứa mật khẩu database ---
+config/local.cfg
+config/dspace.cfg
+config/db-connection-test.sql
+
+# --- DỮ LIỆU NẶNG: Không đẩy assetstore (file người dùng upload) ---
+assetstore/
+
+# --- DỮ LIỆU TẠM & CHỈ MỤC: Không đẩy Solr và Logs ---
+solr/
+log/
+temp/
+reports/
+
+# --- FILE BIÊN DỊCH & THƯ VIỆN ---
+bin/
+lib/
+webapps/
+target/
+*.jar
+*.war
+*.class
+
+# --- FILE HỆ THỐNG ---
+.DS_Store
+*.log
+*.tmp
+config/local.cfg.bak
+
