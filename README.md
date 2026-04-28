@@ -49,3 +49,11 @@ Giao diện không cập nhật** | Browser/Server Cache | Chạy lệnh xóa th
 ### 1. Sao lưu Database
 ```bash
 pg_dump -U dspace -h localhost dspace > dspace_backup_$(date +%F).sql
+
+Fontend:
+![Trang chủ](images/anh1.png)
+![Đơn vị,Bộ lọc](images/anh2.png)
+![Video](images/anh4.png)
+![File] (images/anh3.png)
+
+
